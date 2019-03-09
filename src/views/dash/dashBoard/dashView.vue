@@ -32,9 +32,12 @@
 							 <el-row class="drag-title">
 							 	<el-col :span="23">{{item.title}}</el-col>
 							 </el-row>
-							  <el-row class="drag-content">
+							  <el-row  draggable="false">
 							  	<el-col :span="24">
-							  		<component v-bind:is="item.component"  ref="childWidget"></component>
+							  		<component v-bind:is="item.component" 
+							  		draggable="false"
+							  		:style="{'position': 'relative', 'z-index': 999}"
+							  		 ref="childWidget"></component>
 							  	</el-col>
 							 </el-row>
 			        </grid-item>

@@ -11,7 +11,7 @@ export default {
                {"x":3,"y":0,"w":3,"h":10,"i":"1",component:"techList",title:'开发技术掌握概览'},
                {"x":0,"y":40,"w":3,"h":10,"i":"2",component:"LineComponent",title:'框架类库[VUE]'},
                {"x":3,"y":40,"w":3,"h":10,"i":"3",component:"pieComponent",title:'UI框架【BootStrap/Element UI】'},
-               {"x":0,"y":80,"w":6,"h":10,"i":"4",component:"radarComponent",title:'技术栈能力值分布'},
+               {"x":0,"y":80,"w":6,"h":14,"i":"4",component:"radarComponent",title:'技术栈能力值分布'},
                 
             ],
             beforemove :{},
@@ -49,7 +49,6 @@ export default {
          
         },
          resizedEvent: function (i, newH, newW, newHPx, newWPx) {
-             debugger
             console.log("RESIZED i=" + i + ", H=" + newH + ", W=" + newW + ", H(px)=" + newHPx + ", W(px)=" + newWPx);
             this.$refs.childWidget[i].resetResize({
                 height: newHPx

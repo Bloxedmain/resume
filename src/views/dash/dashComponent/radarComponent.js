@@ -50,7 +50,6 @@ export default {
                     },
                     indicator: [
                        { name: 'HTML', max: 100},
-                       
                        { name: 'Javascript/Jquery', max: 100},
                        { name: 'VUE', max: 100},
                        { name: 'angular/react', max: 100},
@@ -60,7 +59,14 @@ export default {
                        { name: 'CSS/LESS', max: 100},
                        { name: 'Element/iview/bootstrap', max: 100},
 
-                    ]
+                    ],
+                    splitArea : {
+                        show : true,   
+                        areaStyle : {
+                           color: this.color 
+                           // 图表背景网格的颜色
+                        }
+                     },
                 },
                 series: [{
                     name: '',

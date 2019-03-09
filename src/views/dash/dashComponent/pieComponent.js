@@ -52,7 +52,6 @@ export default {
                     value: value,
                 })
             } 
-            debugger
             this.chartDom.setOption({
                 title: {
                     text: '100%',

@@ -1,6 +1,4 @@
-import mixin from './mixin.js'
 export default {
-    mixins: [mixin],
     data() {
         return {
         }
@@ -10,6 +8,5 @@ export default {
     methods: {
     },
     mounted: function () {
-        this.init().update();
     }
 }
