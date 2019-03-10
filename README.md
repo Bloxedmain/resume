@@ -2,6 +2,10 @@
 
 > shangyc-resume
 
+# Preview
+
+> /resume/tree/master/static 【效果图】
+
 # develop tool
  iframe : Vue+element UI  [2.6 + 2.6]
  component :vue-grid-layout echart3.0
