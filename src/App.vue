@@ -10,7 +10,7 @@ export default {
 }
 </script>
 
-<style>
+<style >
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -21,7 +21,9 @@ export default {
 section{
 	padding-top :30px;
 }
-.el-card__header{
-  background-color:#ECF0F7
-}
+.total  .el-card__header{
+    background-color:#ECF0F7
+  }
+
+
 </style>

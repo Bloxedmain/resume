@@ -1,5 +1,5 @@
 <template>
-<el-row>
+<el-row  class="total">
 	<el-row>
 		<div>
     		<headNav></headNav>
