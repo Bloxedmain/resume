@@ -2,9 +2,9 @@
 
 > shangyc-resume
 
-# Preview【效果图】
+# Preview
 
-> /resume/tree/master/static 
+> /resume/tree/master/static 【效果图】
 
 # develop tool
  iframe : Vue+element UI  [2.6 + 2.6]
