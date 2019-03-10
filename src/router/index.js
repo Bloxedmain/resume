@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
-import {dash} from 'views/'
+import {dash,table,sum} from 'views/'
 Vue.use(Router)
 
 export default new Router({
@@ -19,6 +19,17 @@ export default new Router({
 		name     : 'dashboard',
 		hidden   : true,
 		component: dash.dashBoard,
+	},
+	{
+		path     : '/table/list',
+		name     : 'table',
+		hidden   : true,
+		component: table,
+	},{
+		path     : '/sum',
+		name     : 'sum',
+		hidden   : true,
+		component: sum,
 	},
   ]
 })

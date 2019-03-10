@@ -21,4 +21,7 @@ export default {
 section{
 	padding-top :30px;
 }
+.el-card__header{
+  background-color:#ECF0F7
+}
 </style>

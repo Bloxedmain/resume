@@ -26,11 +26,9 @@ export default {
             ]
         }
     },
-    watch:{
-    },
     methods: {
         update() {
-            var option = option = {
+            var option = {
                 title: {
                     text: ''
                 },
@@ -81,9 +79,12 @@ export default {
                 }]
             };
             this.chartDom.setOption(option);
+            this.chartDom &&  setInterval(() => {this.chartDom.resize();}, 1000)
         },
     },
     mounted: function () {
         this.init().update();
-    }
+    },
+    watch:{
+    },
 }

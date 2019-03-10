@@ -31,8 +31,6 @@ export default {
             ]
         }
     },
-    watch:{
-    },
     methods: {
         update() {
             var groupData = [
@@ -106,6 +104,7 @@ export default {
                 ]
 
             });
+            this.chartDom &&  setInterval(() => {this.chartDom.resize();}, 1000)
         },
     },
     mounted: function () {

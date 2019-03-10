@@ -10,7 +10,10 @@ export default {
     methods: {
         setHeight(data) {
             let height = data ? data : this.parent.$el.offsetHeight
-            this.$refs.widgetShow.style.height = height - 142 + 'px'
+            this.$refs.widgetShow.style.height = (height - 142 + 'px')
+            if(this.$refs.widgetShow.style.height == ''){
+                this.$refs.widgetShow.style.minHeight = "308px"
+            }
         },        
         init() {
             //基于准备好的dom，初始化echarts实例
@@ -28,10 +31,12 @@ export default {
     computed: {
         parent() {
             let result = this.$parent;
-            while (result.$options.name !== 'GridItem') {
+            while (result.$options.name !== 'GridItem' && result.$options.name !=='ElCarouselItem') {
                 result = result.$parent;
             }
             return result;
+        },
+        router(){
         }
     },
     mounted() {

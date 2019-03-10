@@ -12,6 +12,14 @@ Vue.config.productionTip = false
 Vue.use(ElementUI);
 Vue.use(vueGridLayout);
 /* eslint-disable no-new */
+
+Vue.Cancel = [];
+router.beforeEach((to, from, next) => {
+    while (Vue.Cancel && Vue.Cancel.length) {
+        Vue.Cancel.shift()('cancel');
+    }
+    next();
+})
 new Vue({
   el: '#app',
   router,

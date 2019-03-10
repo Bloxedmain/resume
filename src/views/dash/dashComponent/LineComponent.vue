@@ -1,6 +1,6 @@
 <template>
     <section>
-        <div ref="widgetShow"></div>
+        <div ref="widgetShow" ></div>
     </section>
 </template>
 <script>
@@ -8,5 +8,4 @@
     export default LineComponent;
 </script>
 <style scoped>
-    
 </style>
