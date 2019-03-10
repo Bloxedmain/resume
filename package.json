@@ -1,7 +1,7 @@
 {
-  "name": "dashboard",
+  "name": "resume",
   "version": "1.0.0",
-  "description": "dashboard component",
+  "description": "尚耀程个人简历",
   "author": "bloxed",
   "private": true,
   "scripts": {
