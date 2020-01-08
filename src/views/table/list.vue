@@ -74,6 +74,7 @@
 			      prop="tag"
 			      label="标签"
 			      width="150"
+				  show-overflow-tooltip	
 			      :filters="[{ text: '思眭', value: '上海思眭信息技术有限公司' }, { text: '蓝科', value: '蓝科科技有限公司' }]"
 			      :filter-method="filterTag"
 			      filter-placement="bottom-end">

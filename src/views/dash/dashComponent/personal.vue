@@ -14,7 +14,7 @@
       </el-row>
       <el-row>
           <el-col :span="6">工作年限  ：</el-col>
-          <el-col :span="18" ><el-tag class="alignleft">3年</el-tag></el-col>
+          <el-col :span="18" ><el-tag class="alignleft">4年</el-tag></el-col>
       </el-row>
       <el-row>
           <el-col :span="6">联系电话  ：</el-col>
